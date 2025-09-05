@@ -1,18 +1,22 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import '@/styles/pages/login.css';
 import { IoCloseOutline } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 
 export default function LoginForm() {
-
   return (
     <div className="login-container">
       <div className="login-box">
+        
         {/* Botón cerrar (X) */}
-        <button className="close-btn"><IoCloseOutline /></button>
+        <Link href={'/'}
+        className="close-btn" 
+        aria-label="Cerrar">
+          <IoCloseOutline />
+        </Link>
 
         {/* Título */}
         <h2 className="login-title">Iniciar Sesión</h2>

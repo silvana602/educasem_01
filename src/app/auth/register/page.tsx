@@ -1,12 +1,20 @@
 import '@/styles/pages/register.css'
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { IoCloseOutline } from 'react-icons/io5';
 
 export default function RegisterForm() {
+
   return (
     <div className="register-container">
       <div className="register-box">
-        <button className="close-btn"><IoCloseOutline /></button>
+
+        {/* Boton de cerrar */}
+        <Link href={'/'} 
+        className="close-btn" 
+        aria-label="Cerrar">
+          <IoCloseOutline />
+        </Link>
 
         <h2 className="register-title">Crear Cuenta</h2>
         <p className="register-subtitle">

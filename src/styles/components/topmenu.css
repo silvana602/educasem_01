@@ -1,0 +1,46 @@
+.navigation {
+  display: flex;
+  padding: 10px 150px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: red;
+}
+
+.title-app {
+  color: green;
+  font-size: 30px;
+}
+
+.option-menu {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  transition: all 150ms ease-in-out;
+}
+
+.option-menu:hover {
+  background-color: green;
+}
+
+.btn-sesion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-login, .btn-signup {
+  border-radius: 0.375rem;
+  padding: 10px 25px;
+  margin: 0 10px;
+}
+
+.btn-login {
+  background-color: green;
+}
+
+.btn-signup {
+  background-color: blue;
+}
+
+/* ----------- Responsive ----------- */
