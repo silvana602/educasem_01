@@ -1,6 +1,6 @@
 import { titleFont } from '@/config/fonts';
 import Link from 'next/link';
-
+import '@/styles/components/footer.css'
 
 export const Footer = () => {
   return (
@@ -9,26 +9,24 @@ export const Footer = () => {
       <Link
         href='/'
       >
-        <span className={`${ titleFont.className } antialiased font-bold `}>Teslo </span>
-        <span>| shop </span>
+        <span className={`${ titleFont.className } antialiased font-bold`}>Educasem </span>
         <span>© { new Date().getFullYear() }</span>
+        <span className='margin-link'></span>
       </Link>
 
       <Link
         href='/'
-        className="mx-3"
+        className="margin-link"
       >
         Privacidad & Legal
       </Link>
 
       <Link
         href='/'
-        className="mx-3"
+        className="margin-link"
       >
         Ubicaciones
       </Link>
-
-
     </div>
   )
 }

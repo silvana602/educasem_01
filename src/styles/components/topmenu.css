@@ -1,4 +1,8 @@
 .navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   display: flex;
   padding: 10px 150px;
   justify-content: space-between;
@@ -26,7 +30,7 @@
 .btn-sesion {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
 }
 
 .btn-login, .btn-signup {
@@ -41,6 +45,14 @@
 
 .btn-signup {
   background-color: blue;
+}
+
+.navigation a,
+.option-menu,
+.btn-login,
+.btn-signup {
+  text-decoration: none !important; /* fuerza que no haya subrayado */
+  color: inherit;
 }
 
 /* ----------- Responsive ----------- */

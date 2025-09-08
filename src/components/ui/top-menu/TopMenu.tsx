@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import '@/styles/components/topmenu.css'
-import { titleFont } from "@/config/fonts";
 
 export const TopMenu = () => {
   return (
