@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import '@/styles/components/topmenu.css'
+import '@/styles/styles.components/topmenu.css'
 
 export const TopMenu = () => {
   return (

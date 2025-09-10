@@ -1,13 +1,14 @@
-import "@/styles/components/home-page/base.css";
-import "@/styles/components/home-page/front-page.css";
-import "@/styles/components/home-page/search.css";
-import "@/styles/components/home-page/benefits.css";
-import "@/styles/components/home-page/courses.css";
-import "@/styles/components/home-page/professionals.css";
-import "@/styles/components/home-page/plans.css";
-import "@/styles/components/home-page/contact.css";
+import "@/styles/styles.components/home-page/Base.css";
+import "@/styles/styles.components/home-page/Front-page.css";
+import "@/styles/styles.components/home-page/Benefits.css";
+import "@/styles/styles.components/home-page/Courses.css";
+import "@/styles/styles.components/home-page/Professionals.css";
+import "@/styles/styles.components/home-page/Plans.css";
+import "@/styles/styles.components/home-page/Contact.css";
+// import '@/styles/styles.components/home-page/Search.css';
+import { Search } from './ui';
 
-import { IoCheckmarkCircle, IoGlobeOutline, IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoTiktok, IoLogoTwitter, IoLogoYoutube, IoSearch } from "react-icons/io5";
+import { IoCheckmarkCircle, IoGlobeOutline, IoLogoFacebook, IoLogoInstagram, IoLogoLinkedin, IoLogoTiktok, IoLogoTwitter, IoLogoYoutube } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -36,24 +37,7 @@ export default function HomePage() {
         </section>
 
         {/* Search Section */}
-        <section className="search-section">
-          <div className="search-container">
-            <label htmlFor="courseSearch" className="search-label">
-              Buscar Curso
-            </label>
-            <div className="search-input-container">
-              <input
-                type="text"
-                id="courseSearch"
-                className="search-input"
-                placeholder="Buscar curso..."
-              />
-              <Link href="/" className="search-button" aria-label="buscar">
-                <IoSearch size={25} />
-              </Link>
-            </div>
-          </div>
-        </section>
+        <Search />
 
         {/* Why Study Section */}
         <section className="question-section">
@@ -308,51 +292,51 @@ export default function HomePage() {
                 <div className='from-footer'>
                   <div className='social-links'>
                     <Link
-                      href="#"
+                      href="https://cecasem.com/"
                       className='social-icon'
                       aria-label="Website"
                     >
                       <IoGlobeOutline />
                     </Link>
                     <Link
-                      href="#"
+                      href="https://www.facebook.com/cecasem.bolivia"
                       className='social-icon'
                       aria-label="Facebook"
                     >
                       <IoLogoFacebook />
                     </Link>
                     <Link
-                      href="#"
+                      href="https://www.instagram.com/cecasem_bolivia"
                       className='social-icon'
                       aria-label="Instagram"
                     >
                       <IoLogoInstagram />
                     </Link>
                     <Link
-                      href="#"
+                      href="https://x.com/cecasembol"
                       className='social-icon'
-                      aria-label="Instagram"
+                      aria-label="X"
                     >
                       <IoLogoTwitter /> {/* CAMBIAR ICONO */}
                     </Link>
                     <Link
-                      href="#"
+                      href="https://bo.linkedin.com/company/cecasem"
                       className='social-icon'
-                      aria-label="Instagram"
+                      aria-label="LinkedIn"
                     >
                       <IoLogoLinkedin />
                     </Link>
                     <Link
-                      href="#"
+                      href="https://www.tiktok.com/@cecasembolivia"
                       className='social-icon'
-                      aria-label="Instagram"
+                      aria-label="TikTok"
                     >
                       <IoLogoTiktok />
                     </Link>
                     <Link
-                      href="#"
+                      href="https://www.youtube.com/@cecasembolivia"
                       className='social-icon'
-                      aria-label="Instagram"
+                      aria-label="YouTube"
                     >
                       <IoLogoYoutube />
                     </Link>

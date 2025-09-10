@@ -2,9 +2,10 @@
 .search-section {
   width: 100%;
   max-width: 1200px;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 0;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
@@ -17,7 +18,7 @@
 }
 
 .search-label {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #2d3748;
 }

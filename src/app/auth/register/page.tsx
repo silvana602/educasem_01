@@ -1,6 +1,6 @@
 import '@/styles/pages/register.css'
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/navigation';
 import { IoCloseOutline } from 'react-icons/io5';
 
 export default function RegisterForm() {

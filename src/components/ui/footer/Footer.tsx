@@ -1,6 +1,6 @@
 import { titleFont } from '@/config/fonts';
 import Link from 'next/link';
-import '@/styles/components/footer.css'
+import '@/styles/styles.components/footer.css'
 
 export const Footer = () => {
   return (
